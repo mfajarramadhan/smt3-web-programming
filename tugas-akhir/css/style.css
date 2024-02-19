@@ -1,0 +1,185 @@
+body {
+    font: 13px Arial;
+    /* Pengaturan huruf */
+    margin: 0;
+    background: white;
+    height: 100vh;
+}
+
+/* PENGATURAN LINK */
+.aksi a {
+    font-weight: bold;
+}
+
+a:link {
+    /* Saat link diam */
+    color: black;
+    text-decoration: none;
+}
+
+.aksi a:hover {
+    /* Saat mouse di arahkan ke link */
+    color: red;
+}
+
+a:visited {
+    /* Saat link sudah di kunjungi */
+    color: black;
+    text-decoration: none;
+}
+
+div.container {
+    background-image: url(https://www.dekhnews.com/wp-content/uploads/2020/11/Junior-Data-Analyst-vs-Senior-Data-Analyst..jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 95.2vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.container h1 {
+    text-shadow: 1px 1px black;
+    font-size: 30;
+}
+
+.konten {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+}
+
+/* PENGATURAN BAGIAN TABEL */
+th {
+    /* Pengaturan judul tabel */
+    background-color: rgba(2, 4, 117, 0.76);
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+table {
+    font: 13px Arial;
+    border-collapse: collapse;
+    border-color: gray;
+}
+
+table.ubah,
+table.tambah {
+    margin-top: 75px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(219, 219, 250);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(181, 181, 255);
+}
+
+table tr td.aksi {
+    width: 8%;
+}
+
+table tr.btn-submit td {
+    text-align: center;
+}
+
+table tr.btn-submit td input {
+    background-color: #0f4a84;
+    color: white;
+    border: 1px solid black;
+    width: 70px;
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.626);
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+/* PENGATURAN UNTUK INPUT DAN BUTTON */
+input,
+textarea,
+select {
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-color: #d0d4d9;
+    border-radius: 3px;
+    border: 1px solid #0f4a84;
+    font: 12px arial;
+    padding: 2px;
+    color: #333333;
+    width: 100%;
+}
+
+/* PENGATURAN UNTUK MENU */
+.menu {
+    position: relative;
+    width: 100%;
+    height: 26px;
+    background-color: rgba(2, 4, 117, 0.76);
+    /* WARNA BACKGROUND MENU */
+    border: 1px solid #0f4a84;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    position: relative;
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    /* WARNA HURUF */
+    padding: 5px;
+    width: auto;
+    margin-left: 10px;
+    float: left;
+}
+
+.menu ul li ul {
+    display: none;
+}
+
+.menu ul li:hover ul {
+    display: block;
+    position: absolute;
+    margin-top: 25px;
+
+}
+
+.menu ul li:hover ul li a {
+    display: block;
+    background-color: rgba(2, 4, 117, 0.76);
+    /* WARNA BACKGROUND SUB MENU */
+    color: #ffffff;
+    width: 200px;
+}
+
+.menu ul li:hover ul li a:hover {
+    background-color: rgb(181, 181, 255);
+    color: #ffffff;
+}
